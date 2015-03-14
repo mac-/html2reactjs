@@ -4,7 +4,7 @@
 	"contributors": [
 		"Mac Angell <mac.ang311@gmail.com>"
 	],
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"dependencies": {
 		"htmltojsx": "^0.2.1",
 		"react-tools": "^0.13.x"
@@ -24,6 +24,7 @@
 		"node": ">=0.10.0"
 	},
 	"main": "./lib/html2react.js",
+	"bin": "./bin/html2reactjs",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mac-/html2reactjs"
