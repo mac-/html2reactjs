@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+var Html2react = require('../lib/html2react');
+var html2react= new Html2react();
+
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
+var input = '';
+
+process.stdin.on('data', function(chunk) {
+	input += chunk;
+});
+
+process.stdin.on('end', function() {
+	if (!input) {
+		process.exit(1);
+	}
+	process.stdout.write(html2react.convert(input));
+	process.exit();
+})
+
+process.stdout.on('error', process.exit);
